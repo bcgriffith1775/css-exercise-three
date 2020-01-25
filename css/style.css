@@ -1,73 +1,43 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*END OF CSS RESET*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
-.location {
-    padding:15px;
-    border-bottom:1px solid black;
-}
+/* This forces the two divs .content, and .arrow to align side by side*/
 .location .content, .location .arrow {
     display:inline-block;
 }
+/* this stylizes the location div to occupy the majority of the left side of the page*/
+.location .content{
+  margin: 3%;
+padding: 2%;
+width: 82%;
+}
+/* this stylizes the arrow div to occupy the remaining right side of the page*/
+.location .arrow{
+  margin: 1%;
+  padding: 2%;
+  width: 2%;
+}
+/* This adds the black line between divs*/
+.location {
+    padding:0px;
+    border-bottom:1px solid black;
+}
+/* Previous Submission
+
 .location .arrow {
     float:right;
 }
-.location:hover {
-    background-color:#94918f;
-}
+
 .location .content h1 {
     padding-bottom:5px;
 }
 .location .arrow {
 	padding-top: 7px;
+}
+*/
+/* This changes the color of the div during mouse hover*/
+.location:hover {
+    background-color:#94918f;
 }
 body {
 	background-color: #363534;
@@ -92,13 +62,17 @@ nav {
 .restaurant-list {
   padding-top: 45px;
 }
-
-h1{
+/* This styles the headers within the divs*/
+.restaurant-list h1{
 	font-size: 19px;
+  padding-bottom: 3px;
 	font-weight: 800;
 }
-h3{
+
+.restaurant-list h3{
 	font-size: 12px;
 	font-weight: 800;
 }
+
+# css-exercise-three
 # css-exercise-three
